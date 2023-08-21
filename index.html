@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 3</title>
+</head>
+<body>
+    <h2>Cầu 1:Bài tập về Iframe</h2>
+    
+    <p><b>Yêu cầu:</b> Vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiển thị được như sau:</p>
+    <p><b>Lưu ý: </b>Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14920.843405547665!2d105.781282!3d20.782756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b54c3159b73f%3A0x1b0e8f22b7d5ae01!2zQ8O0bmcgVHkgVE5ISCBDw7RuZyBOZ2jhu4cgVsOgIEThu4tjaCBW4bulIERBQ0E!5e0!3m2!1svi!2sus!4v1686453926700!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Câu 2: Bài tập về form</h2>
+    <p> <b>Yêu cầu: </b> Tạo form <b>đăng ký</b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho Đăng ký.</p>
+    <form action="">
+        <label for="hoten">Họ tên:</label>
+        <br><input type="text" name="name" placeholder="Ví dụ: levana" id="hoten" required>
+        <br><label for="email">Email:</label>
+        <br><input type="email" name="email" placeholder="Ví dụ: levana@gmail.com" id="email" required>
+        <br><label for="passid">Mật khẩu:</label>    
+        <br><input type="pass" name="pass" id="passid" required>
+        <br><button type="submit">Đăng ký </button>
+        
+
+    </form>
+    <p><b>Yêu cầu:</b> Tạo form <b>tìm kiếm</b> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)</p>
+    <form action="">
+        <input type="text" name="timkiem" placeholder="Nhập nội dung tìm kiếm...">
+        <button type="submit">Tìm kiếm</button>
+    </form>
+    <h2>Câu 3:Bài tập để ôn lại kiến thức về form</h2>
+    <p><b>Yêu cầu:</b> Vẽ lại các thẻ dưới đây:</p>
+    <p><b>- Thẻ input:</b></p>
+    <form action="">
+        <label for="text">Kiểu text:</label>
+        <br><input type="text" name="Ktext" id="text" placeholder="Nhập họ tên..." required>
+        <br><br><label for="email">Kiểu email</label>
+        <br><input type="email" name="Kemail" id="email" placeholder="Nhập email" required>
+        <br><br><label for="pass">Kiểu password</label>
+        <br><input type="password" name="Kmatkhau" id="pass" required>
+        <br><br><label for="number">Kiểu number</label>
+        <br><input type="number" name="Knumber" id="number">
+        <br><br><label for="date">Kiểu date</label>
+        <br><input type="date" name="date" id="date">
+        <br><br><label for="time">Kiểu time</label>
+        <br><input type="time" name="time" id="time">
+        <br><br><label for="file">Kiểu file</label>
+        <br><input type="file" name="file" id="file">
+        <br><br><div>Kiểu radio</div>
+        <input type="radio" name="gt" id="nam" value="nam">
+        <label for="nam">Nam</label>
+        <br><input type="radio" name="gt" id="nữ" value="nữ">
+        <label for="nữ">Nữ</label>
+        <br><input type="radio" name="gt" id="khác" value="khác">
+        <label for="khác">Khác</label>
+        <p>Kiểu range:<br>Âm lượng (min=0 và max=100):</p>
+        <input type="range" name="amluong" >
+        <p>Kiểu color:</p>
+        <input type="color" name="mausac" >
+        <p><b>- Thẻ select:</b></p>
+        <label for="dm">Chọn danh mục</label>
+        <br><select name="select" id="dm">
+            <option value="quần">Quần</option>
+            <option value="áo">Áo</option>
+            <option value="mũ">Mũ</option>
+            <option value="khăn">Khăn</option>
+        </select>
+       
+        <p><b>- Thẻ textarea (có cols = 30 và rows = 10):</b></p>
+        <textarea name="ghichu" cols="30" rows="10"></textarea>
+        <button type="submit">gửi</button>
+    </form>
+</body>
+</html>
